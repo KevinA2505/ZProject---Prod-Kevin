@@ -159,8 +159,8 @@ function ToolForm({ tool, onSaved, onCancel }: ToolFormProps) {
       >
         <Stack>
           <Text>
-            Ya existe una herramienta con el nombre “{duplicate?.name}”. ¿Deseas
-            registrarla de todas formas?
+            Ya existe una herramienta con ese nombre. ¿Deseas crearla de todas
+            formas?
           </Text>
           <Group justify="flex-end">
             <Button variant="default" onClick={() => setDuplicate(null)} disabled={busy}>

@@ -141,7 +141,9 @@ export function ToolsPage() {
         opened={deleteModal.opened}
         title="Eliminar herramienta"
         message={
-          deleteModal.item ? `¿Eliminar ${deleteModal.item.name}?` : ""
+          deleteModal.item
+            ? `¿Eliminar la herramienta ${deleteModal.item.name}? El historial se conserva.`
+            : ""
         }
         confirmLabel="Eliminar"
         loading={deleteBusy}
