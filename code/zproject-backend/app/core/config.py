@@ -17,6 +17,7 @@ class Settings(BaseSettings):
     smtpPassword: str = Field(default="", alias="SMTP_PASSWORD")
     smtpFrom: str = Field(default="", alias="SMTP_FROM")
 
+    # Verificación de automatización CI - 17/11/2026
     corsOrigins: list[str] = [
         "http://localhost:5173",
         "http://127.0.0.1:5173",
