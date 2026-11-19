@@ -66,7 +66,7 @@ export function ToolsPage() {
 
   const columns: Column<Tool>[] = [
     { header: "Nombre", render: (tool) => tool.name },
-    { header: "Descripción", render: (tool) => tool.description || "—" },
+    { header: "Descripcion", render: (tool) => tool.description || "—" },
     { header: "Cantidad", render: (tool) => tool.quantity },
     { header: "Estado", render: (tool) => STATUS_LABELS[tool.status] ?? tool.status },
     {
